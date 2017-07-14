@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     String[] aNodeTypes = {"FOURINHAND","HALF WINDSOR","FULL WINDSOR","NICKY","BOW TIE",
             "KELVIN","ORIENTAL","PRATT","ST. ANDREW","BALTHUS","HANOVER","PLATTSBURGH",
-            "GRANTCHESTTER", "VICTORIA","CAFE","ELDREDGE","TRINITY","CHRISTENSEN"};
+            "GRANTTCHESTER","VICTORIA","CAFE","ELDREDGE","TRINITY","CHRISTENSEN"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -62,19 +62,30 @@ public class MainFragmentTieActivity extends AppCompatActivity {
         Intent intent = getIntent();
         message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
-        Toast.makeText(this.getBaseContext(), message, Toast.LENGTH_LONG).show();
-
         CustomTieNodeLoader customTieNodeLoader = new CustomTieNodeLoader();
 
         switch (message) {
-            case "FOURINHAND": { lista = customTieNodeLoader.loadFourInHandsSteps(); break;}
-            case "HALF WINDSOR": { lista = customTieNodeLoader.loadHalfWindsorSteps(); break;}
+            case "FOURINHAND"  : { lista = customTieNodeLoader.loadFourInHandsSteps(); break; }
+            case "HALF WINDSOR": { lista = customTieNodeLoader.loadHalfWindsorSteps(); break; }
             case "FULL WINDSOR": { lista = customTieNodeLoader.loadFullWindsorSteps(); break; }
             case "NICKY": { lista = customTieNodeLoader.loadNickySteps(); break; }
-
-
-
+            case "BOW TIE": { lista = customTieNodeLoader.loadBowTieSteps(); break; }
+            case "KELVIN": { lista = customTieNodeLoader.loadKelvinSteps(); break; }
+            case "ORIENTAL": { lista = customTieNodeLoader.loadOrientalSteps(); break; }
+            case "PRATT": { lista = customTieNodeLoader.loadPrattSteps(); break; }
+            case "ST. ANDREW": { lista = customTieNodeLoader.loadStAndrewSteps(); break; }
+            case "BALTHUS": { lista = customTieNodeLoader.loadBalthusSteps(); break; }
+            case "HANOVER": { lista = customTieNodeLoader.loadHanoverSteps(); break; }
+            case "PLATTSBURGH": { lista = customTieNodeLoader.loadPlattsburgSteps(); break; }
+            case "GRANTTCHESTER": { lista = customTieNodeLoader.loadGranttchesterSteps(); break; }
+            case "VICTORIA": { lista = customTieNodeLoader.loadVictoriaSteps(); break; }
+            case "CAFE": { lista = customTieNodeLoader.loadCafeSteps(); break; }
+            case "ELDREDGE": { lista = customTieNodeLoader.loadEldredgeSteps(); break; }
+            case "TRINITY": { lista = customTieNodeLoader.loadTrinitySteps(); break; }
+            case "CHRISTENSEN": { lista = customTieNodeLoader.loadChristensenSteps(); break; }
         }
+
+
 
 
         //imageView.setImageResource(R.drawable.fourinhand08);
@@ -185,18 +196,29 @@ public class MainFragmentTieActivity extends AppCompatActivity {
 
             CustomTieNodeLoader customTieNodeLoader = new CustomTieNodeLoader();
 
-            lista = customTieNodeLoader.loadFourInHandsSteps();
+            //lista = customTieNodeLoader.loadFourInHandsSteps();
 
             int i = getArguments().getInt(ARG_SECTION_NUMBER);
-
-            Toast.makeText(getActivity().getBaseContext(), message + "-- " + i, Toast.LENGTH_LONG).show();
-
 
             switch (message) {
                 case "FOURINHAND"  : { lista = customTieNodeLoader.loadFourInHandsSteps(); break; }
                 case "HALF WINDSOR": { lista = customTieNodeLoader.loadHalfWindsorSteps(); break; }
                 case "FULL WINDSOR": { lista = customTieNodeLoader.loadFullWindsorSteps(); break; }
                 case "NICKY": { lista = customTieNodeLoader.loadNickySteps(); break; }
+                case "BOW TIE": { lista = customTieNodeLoader.loadBowTieSteps(); break; }
+                case "KELVIN": { lista = customTieNodeLoader.loadKelvinSteps(); break; }
+                case "ORIENTAL": { lista = customTieNodeLoader.loadOrientalSteps(); break; }
+                case "PRATT": { lista = customTieNodeLoader.loadPrattSteps(); break; }
+                case "ST. ANDREW": { lista = customTieNodeLoader.loadStAndrewSteps(); break; }
+                case "BALTHUS": { lista = customTieNodeLoader.loadBalthusSteps(); break; }
+                case "HANOVER": { lista = customTieNodeLoader.loadHanoverSteps(); break; }
+                case "PLATTSBURGH": { lista = customTieNodeLoader.loadPlattsburgSteps(); break; }
+                case "GRANTTCHESTER": { lista = customTieNodeLoader.loadGranttchesterSteps(); break; }
+                case "VICTORIA": { lista = customTieNodeLoader.loadVictoriaSteps(); break; }
+                case "CAFE": { lista = customTieNodeLoader.loadCafeSteps(); break; }
+                case "ELDREDGE": { lista = customTieNodeLoader.loadEldredgeSteps(); break; }
+                case "TRINITY": { lista = customTieNodeLoader.loadTrinitySteps(); break; }
+                case "CHRISTENSEN": { lista = customTieNodeLoader.loadChristensenSteps(); break; }
             }
 
             imageView.setImageResource(lista.get(i-1).getNodeStepPicture());
