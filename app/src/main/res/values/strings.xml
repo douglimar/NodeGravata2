@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">No de Gravata</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">STEP: %1$d</string>
+    <string name="banner_ad_unit_TESTE" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+</resources>
