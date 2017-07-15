@@ -59,22 +59,22 @@ public class TieNode {
 
         tieNodes.add(new TieNode(R.drawable.logotipo,  "Four In Hand", "Classic node for classic people"));
         tieNodes.add(new TieNode(R.drawable.logotipo2, "Half Windsor", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo,  "Full Windsor", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo2, "Nicky", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo,  "BOW Tie", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo2, "Kelvin", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo,  "Oriental", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo2, "Pratt", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo2, "St. Andrew", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo, "Balthus", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo2, "Hanover", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo, "Plattsburgh", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo2, "Granttchester", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo, "Victoria", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo3,  "Full Windsor", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo4, "Nicky", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo5,  "BOW Tie", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo6, "Kelvin", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo7,  "Oriental", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo8, "Pratt", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo9, "St. Andrew", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo10, "Balthus", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo11, "Hanover", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo12, "Plattsburgh", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo13, "Granttchester", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo14, "Victoria", "Classic node for classic people"));
         tieNodes.add(new TieNode(R.drawable.logotipo2, "Cafe", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo, "Eldredge", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo2, "Trinity", "Classic node for classic people"));
-        tieNodes.add(new TieNode(R.drawable.logotipo, "Christensen", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo3, "Eldredge", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo4, "Trinity", "Classic node for classic people"));
+        tieNodes.add(new TieNode(R.drawable.logotipo6, "Christensen", "Classic node for classic people"));
 
         return tieNodes;
     }
