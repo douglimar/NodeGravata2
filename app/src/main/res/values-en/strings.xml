@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">No de Gravata</string>
+    <string name="four_in_hand_step1">1. Begin with the small end slightly above your belly-button (will vary depending on your height and the length and thickness of your tie). Only move the active (wide) end.;   </string>
+    <string name="four_in_hand_step2">2. Wide end over the small end to the left </string>
+    <string name="four_in_hand_step3">3. Under the small end and to the right</string>
+    <string name="four_in_hand_step4">4. Across the front and to the left</string>
+    <string name="four_in_hand_step5">5. Up into the neck loop from underneath</string>
+    <string name="four_in_hand_step6">6. Down through the loop you have just made in the front</string>
+    <string name="four_in_hand_step7">7. Tighten the knot by pulling down on the wide end. Slide the knot up and adjust.</string>
+
+    <string name="half_windsor01">1. Start with the wide end of the tie on the right and the small end on the left. The tip of the small end should rest slightly above your belly-button (this will vary depending on your height and the length and thickness of your tie). Only move the active (wide) end.;</string>
+    <string name="half_windsor02">2. Wide end over the small end to the left.</string>
+    <string name="half_windsor03">3. Under the small end and to the right.</string>
+    <string name="half_windsor04">4. Up to the center, towards neck loop. Through the neck loop and to the left.</string>
+    <string name="half_windsor05">5. Across the front, over to the right.</string>
+    <string name="half_windsor06">6. Up into the neck loop from underneath.</string>
+    <string name="half_windsor07">7. Down through the loop you have just created in the front.</string>
+    <string name="half_windsor08">8. Tighten the knot by pulling down on the wide end. Slide the knot up and adjust.</string>
+
+
+
+</resources>

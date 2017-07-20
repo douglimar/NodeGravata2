@@ -63,83 +63,83 @@ public class MainFragmentTieActivity extends AppCompatActivity {
         Intent intent = getIntent();
         message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
+
         CustomTieNodeLoader customTieNodeLoader = new CustomTieNodeLoader();
 
         switch (message) {
             case "FOURINHAND"  : {
                 lista = customTieNodeLoader.loadFourInHandsSteps();
-                this.setTitle("Four In Hand");
+                this.setTitle(R.string.four_in_hand);
                 break; }
             case "HALF WINDSOR": {
                 lista = customTieNodeLoader.loadHalfWindsorSteps();
-                this.setTitle("Half Windsor");
+                this.setTitle(R.string.half_windsor_name);
                 break; }
             case "FULL WINDSOR": {
                 lista = customTieNodeLoader.loadFullWindsorSteps();
-                this.setTitle("Full Windsor");
+                this.setTitle(R.string.full_windsor_name);
                 break; }
             case "NICKY": {
                 lista = customTieNodeLoader.loadNickySteps();
-                this.setTitle("Nicky");
+                this.setTitle(R.string.nicky_name);
                 break; }
             case "BOW TIE": {
                 lista = customTieNodeLoader.loadBowTieSteps();
-                this.setTitle("Bow Tie");
+                this.setTitle(R.string.bow_tie_name);
                 break; }
             case "KELVIN": {
                 lista = customTieNodeLoader.loadKelvinSteps();
-                this.setTitle("Kelvin");
+                this.setTitle(R.string.kelvin_name);
                 break; }
             case "ORIENTAL": {
                 lista = customTieNodeLoader.loadOrientalSteps();
-                this.setTitle("Oriental");
+                this.setTitle(R.string.oriental_name);
                 break; }
             case "PRATT": {
                 lista = customTieNodeLoader.loadPrattSteps();
-                this.setTitle("Pratt");
+                this.setTitle(R.string.pratt_name);
                 break; }
             case "ST. ANDREW": {
                 lista = customTieNodeLoader.loadStAndrewSteps();
-                this.setTitle("St. Andrew");
+                this.setTitle(R.string.standrew_name);
                 break; }
             case "BALTHUS": {
                 lista = customTieNodeLoader.loadBalthusSteps();
-                this.setTitle("Balthus");
+                this.setTitle(R.string.balthus_name);
                 break; }
             case "HANOVER": {
                 lista = customTieNodeLoader.loadHanoverSteps();
-                this.setTitle("Hanover");
+                this.setTitle(R.string.hanover_name);
                 break; }
             case "PLATTSBURGH": {
                 lista = customTieNodeLoader.loadPlattsburgSteps();
-                this.setTitle("Plattsburgh");
+                this.setTitle(R.string.plattsburgh_name);
                 break; }
             case "GRANTTCHESTER": {
                 lista = customTieNodeLoader.loadGranttchesterSteps();
-                this.setTitle("Granttchester");
+                this.setTitle(R.string.granttchester_name);
                 break; }
             case "VICTORIA": {
                 lista = customTieNodeLoader.loadVictoriaSteps();
-                this.setTitle("Victoria");
+                this.setTitle(R.string.victoria_name);
                 break; }
             case "CAFE": {
                 lista = customTieNodeLoader.loadCafeSteps();
-                this.setTitle("Cafe");
+                this.setTitle(R.string.café_name);
                 break; }
             case "ELDREDGE": {
                 lista = customTieNodeLoader.loadEldredgeSteps();
-                this.setTitle("Eldredge");
+                this.setTitle(R.string.eldredge_name);
                 break; }
             case "TRINITY": {
                 lista = customTieNodeLoader.loadTrinitySteps();
-                this.setTitle("Trinity");
+                this.setTitle(R.string.trinity_name);
                 break; }
             case "CHRISTENSEN": {
                 lista = customTieNodeLoader.loadChristensenSteps();
-                this.setTitle("Christensen");
+                this.setTitle(R.string.christensen_name);
                 break; }
         }
-
 
 
 

@@ -1,7 +1,45 @@
 <resources>
     <string name="app_name">No de Gravata</string>
     <string name="action_settings">Settings</string>
-    <string name="section_format">STEP: %1$d</string>
+    <string name="section_format">Etapa: %1$d</string>
     <string name="banner_ad_unit_TESTE" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="hanover_name">Hanover</string>
+    <string name="full_windsor_name">Full Windsor</string>
+    <string name="half_windsor_name">Half Windsor</string>
+    <string name="nicky_name">Nicky</string>
+    <string name="four_in_hand">Four In Hand</string>
+    <string name="bow_tie_name">BOW Tie</string>
+    <string name="kelvin_name">Kelvin</string>
+    <string name="oriental_name">Oriental (or Simple)</string>
+    <string name="pratt_name">Pratt</string>
+    <string name="standrew_name">St. Andrew</string>
+    <string name="balthus_name">Balthus</string>
+    <string name="plattsburgh_name">Plattsburgh</string>
+    <string name="granttchester_name">Granttchester</string>
+    <string name="victoria_name">Victoria</string>
+    <string name="café_name">Cafe</string>
+    <string name="eldredge_name">Eldredge</string>
+    <string name="trinity_name">Trinity</string>
+    <string name="christensen_name">Christensen</string>
+
+    <string name="four_in_hand_step1">1. Comece com a extremidade pequena ligeiramente acima do seu botão de barriga (variará dependendo da sua altura e do comprimento e espessura da sua gravata). Mova apenas o fim ativo (largo). </string>
+    <string name="four_in_hand_step2">2. Extremidade larga sobre a extremidade pequena para a esquerda</string>
+    <string name="four_in_hand_step3">3. Sob a pequena extremidade e à direita</string>
+    <string name="four_in_hand_step4">4. Através da frente e da esquerda</string>
+    <string name="four_in_hand_step5">5. Gire a partir do pescoço para baixo</string>
+    <string name="four_in_hand_step6">6. Através do loop que você acabou de fazer na frente</string>
+    <string name="four_in_hand_step7">7. Aperte o nó puxando para baixo na extremidade larga. Deslize o nó para cima e ajuste.</string>
+
+
+    <string name="half_windsor01">1. Comece com a extremidade larga da gravata à direita e a extremidade pequena à esquerda. A ponta da extremidade pequena deve descansar ligeiramente acima do seu barriga-botão (isso variará dependendo da sua altura e do comprimento e espessura da sua gravata). Mova apenas o final ativo (largo).</string>
+    <string name="half_windsor02">2. Extremidade larga sobre a extremidade pequena para a esquerda.</string>
+    <string name="half_windsor03">3. Sob a pequena extremidade e à direita.</string>
+    <string name="half_windsor04">4. Até o centro, em direção ao laço do pescoço. Através do laço do pescoço e à esquerda.</string>
+    <string name="half_windsor05">5. Através da frente, sobre a direita.</string>
+    <string name="half_windsor06">6. Para cima no pescoço do pescoço por baixo.</string>
+    <string name="half_windsor07">7. Através do loop que você acabou de criar na frente.</string>
+    <string name="half_windsor08">8. Aperte o nó puxando para baixo na extremidade larga. Deslize o nó para cima e ajuste.</string>
+
+
 
 </resources>
