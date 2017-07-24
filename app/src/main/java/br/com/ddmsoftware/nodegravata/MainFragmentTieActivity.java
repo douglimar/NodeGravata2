@@ -2,6 +2,7 @@ package br.com.ddmsoftware.nodegravata;
 
 import android.app.ActionBar;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -27,6 +28,7 @@ import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 
 public class MainFragmentTieActivity extends AppCompatActivity {
@@ -34,6 +36,8 @@ public class MainFragmentTieActivity extends AppCompatActivity {
     ImageView imageView;
     String message;
     List lista;
+
+    String language;
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -55,88 +59,86 @@ public class MainFragmentTieActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_fragment_tie);
 
-        //imageView = (ImageView)findViewById(R.id.imgTie);
-
+        language = Locale.getDefault().getLanguage();
 
         // Recebe parametros da MAIN ACTIVITY  { Nome do Nó da Gravata }
 
         Intent intent = getIntent();
         message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
-
         CustomTieNodeLoader customTieNodeLoader = new CustomTieNodeLoader();
 
         switch (message) {
             case "FOURINHAND"  : {
-                lista = customTieNodeLoader.loadFourInHandsSteps();
+                lista = customTieNodeLoader.loadFourInHandsSteps(language);
                 this.setTitle(R.string.four_in_hand);
                 break; }
             case "HALF WINDSOR": {
-                lista = customTieNodeLoader.loadHalfWindsorSteps();
+                lista = customTieNodeLoader.loadHalfWindsorSteps(language);
                 this.setTitle(R.string.half_windsor_name);
                 break; }
             case "FULL WINDSOR": {
-                lista = customTieNodeLoader.loadFullWindsorSteps();
+                lista = customTieNodeLoader.loadFullWindsorSteps(language);
                 this.setTitle(R.string.full_windsor_name);
                 break; }
             case "NICKY": {
-                lista = customTieNodeLoader.loadNickySteps();
+                lista = customTieNodeLoader.loadNickySteps(language);
                 this.setTitle(R.string.nicky_name);
                 break; }
             case "BOW TIE": {
-                lista = customTieNodeLoader.loadBowTieSteps();
+                lista = customTieNodeLoader.loadBowTieSteps(language);
                 this.setTitle(R.string.bow_tie_name);
                 break; }
             case "KELVIN": {
-                lista = customTieNodeLoader.loadKelvinSteps();
+                lista = customTieNodeLoader.loadKelvinSteps(language);
                 this.setTitle(R.string.kelvin_name);
                 break; }
             case "ORIENTAL": {
-                lista = customTieNodeLoader.loadOrientalSteps();
+                lista = customTieNodeLoader.loadOrientalSteps(language);
                 this.setTitle(R.string.oriental_name);
                 break; }
             case "PRATT": {
-                lista = customTieNodeLoader.loadPrattSteps();
+                lista = customTieNodeLoader.loadPrattSteps(language);
                 this.setTitle(R.string.pratt_name);
                 break; }
             case "ST. ANDREW": {
-                lista = customTieNodeLoader.loadStAndrewSteps();
+                lista = customTieNodeLoader.loadStAndrewSteps(language);
                 this.setTitle(R.string.standrew_name);
                 break; }
             case "BALTHUS": {
-                lista = customTieNodeLoader.loadBalthusSteps();
+                lista = customTieNodeLoader.loadBalthusSteps(language);
                 this.setTitle(R.string.balthus_name);
                 break; }
             case "HANOVER": {
-                lista = customTieNodeLoader.loadHanoverSteps();
+                lista = customTieNodeLoader.loadHanoverSteps(language);
                 this.setTitle(R.string.hanover_name);
                 break; }
             case "PLATTSBURGH": {
-                lista = customTieNodeLoader.loadPlattsburgSteps();
+                lista = customTieNodeLoader.loadPlattsburgSteps(language);
                 this.setTitle(R.string.plattsburgh_name);
                 break; }
             case "GRANTTCHESTER": {
-                lista = customTieNodeLoader.loadGranttchesterSteps();
+                lista = customTieNodeLoader.loadGranttchesterSteps(language);
                 this.setTitle(R.string.granttchester_name);
                 break; }
             case "VICTORIA": {
-                lista = customTieNodeLoader.loadVictoriaSteps();
+                lista = customTieNodeLoader.loadVictoriaSteps(language);
                 this.setTitle(R.string.victoria_name);
                 break; }
             case "CAFE": {
-                lista = customTieNodeLoader.loadCafeSteps();
+                lista = customTieNodeLoader.loadCafeSteps(language);
                 this.setTitle(R.string.café_name);
                 break; }
             case "ELDREDGE": {
-                lista = customTieNodeLoader.loadEldredgeSteps();
+                lista = customTieNodeLoader.loadEldredgeSteps(language);
                 this.setTitle(R.string.eldredge_name);
                 break; }
             case "TRINITY": {
-                lista = customTieNodeLoader.loadTrinitySteps();
+                lista = customTieNodeLoader.loadTrinitySteps(language);
                 this.setTitle(R.string.trinity_name);
                 break; }
             case "CHRISTENSEN": {
-                lista = customTieNodeLoader.loadChristensenSteps();
+                lista = customTieNodeLoader.loadChristensenSteps(language);
                 this.setTitle(R.string.christensen_name);
                 break; }
         }
@@ -154,15 +156,6 @@ public class MainFragmentTieActivity extends AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
     }
 
@@ -230,7 +223,11 @@ public class MainFragmentTieActivity extends AppCompatActivity {
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
 
             TextView textViewTip = (TextView) rootView.findViewById(R.id.textViewTip);
+
+
 */
+
+            String language = Locale.getDefault().getLanguage();
 
             View rootView = inflater.inflate(R.layout.fragment_main2, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.tvTesteSection);
@@ -260,24 +257,24 @@ public class MainFragmentTieActivity extends AppCompatActivity {
             int i = getArguments().getInt(ARG_SECTION_NUMBER);
 
             switch (message) {
-                case "FOURINHAND"  : { lista = customTieNodeLoader.loadFourInHandsSteps();  break; }
-                case "HALF WINDSOR": { lista = customTieNodeLoader.loadHalfWindsorSteps(); break; }
-                case "FULL WINDSOR": { lista = customTieNodeLoader.loadFullWindsorSteps(); break; }
-                case "NICKY": { lista = customTieNodeLoader.loadNickySteps(); break; }
-                case "BOW TIE": { lista = customTieNodeLoader.loadBowTieSteps(); break; }
-                case "KELVIN": { lista = customTieNodeLoader.loadKelvinSteps(); break; }
-                case "ORIENTAL": { lista = customTieNodeLoader.loadOrientalSteps(); break; }
-                case "PRATT": { lista = customTieNodeLoader.loadPrattSteps(); break; }
-                case "ST. ANDREW": { lista = customTieNodeLoader.loadStAndrewSteps(); break; }
-                case "BALTHUS": { lista = customTieNodeLoader.loadBalthusSteps(); break; }
-                case "HANOVER": { lista = customTieNodeLoader.loadHanoverSteps(); break; }
-                case "PLATTSBURGH": { lista = customTieNodeLoader.loadPlattsburgSteps(); break; }
-                case "GRANTTCHESTER": { lista = customTieNodeLoader.loadGranttchesterSteps(); break; }
-                case "VICTORIA": { lista = customTieNodeLoader.loadVictoriaSteps(); break; }
-                case "CAFE": { lista = customTieNodeLoader.loadCafeSteps(); break; }
-                case "ELDREDGE": { lista = customTieNodeLoader.loadEldredgeSteps(); break; }
-                case "TRINITY": { lista = customTieNodeLoader.loadTrinitySteps(); break; }
-                case "CHRISTENSEN": { lista = customTieNodeLoader.loadChristensenSteps(); break; }
+                case "FOURINHAND"  : { lista = customTieNodeLoader.loadFourInHandsSteps(language);  break; }
+                case "HALF WINDSOR": { lista = customTieNodeLoader.loadHalfWindsorSteps(language); break; }
+                case "FULL WINDSOR": { lista = customTieNodeLoader.loadFullWindsorSteps(language); break; }
+                case "NICKY": { lista = customTieNodeLoader.loadNickySteps(language); break; }
+                case "BOW TIE": { lista = customTieNodeLoader.loadBowTieSteps(language); break; }
+                case "KELVIN": { lista = customTieNodeLoader.loadKelvinSteps(language); break; }
+                case "ORIENTAL": { lista = customTieNodeLoader.loadOrientalSteps(language); break; }
+                case "PRATT": { lista = customTieNodeLoader.loadPrattSteps(language); break; }
+                case "ST. ANDREW": { lista = customTieNodeLoader.loadStAndrewSteps(language); break; }
+                case "BALTHUS": { lista = customTieNodeLoader.loadBalthusSteps(language); break; }
+                case "HANOVER": { lista = customTieNodeLoader.loadHanoverSteps(language); break; }
+                case "PLATTSBURGH": { lista = customTieNodeLoader.loadPlattsburgSteps(language); break; }
+                case "GRANTTCHESTER": { lista = customTieNodeLoader.loadGranttchesterSteps(language); break; }
+                case "VICTORIA": { lista = customTieNodeLoader.loadVictoriaSteps(language); break; }
+                case "CAFE": { lista = customTieNodeLoader.loadCafeSteps(language); break; }
+                case "ELDREDGE": { lista = customTieNodeLoader.loadEldredgeSteps(language); break; }
+                case "TRINITY": { lista = customTieNodeLoader.loadTrinitySteps(language); break; }
+                case "CHRISTENSEN": { lista = customTieNodeLoader.loadChristensenSteps(language); break; }
             }
 
             imageView.setImageResource(lista.get(i-1).getNodeStepPicture());

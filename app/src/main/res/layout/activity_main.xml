@@ -16,7 +16,7 @@
         android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
-        ads:adUnitId="@string/banner_ad_unit_TESTE"
+        ads:adUnitId="@string/banner_ad_unit"
         ads:adSize="BANNER" />
 
 </LinearLayout>
